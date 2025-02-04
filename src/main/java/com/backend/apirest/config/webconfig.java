@@ -8,7 +8,7 @@ public class webconfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/**")  // Aplica CORS a todas las rutas que empiecen con /api/
+        registry.addMapping("/api/**")  // Aplico CORS a todas las rutas que empiecen con /api/
                 .allowedOrigins("http://localhost:5173")  // Permite solicitudes desde localhost:5173
                 .allowedMethods("GET", "POST", "PUT", "DELETE")  // Métodos HTTP permitidos
                 .allowedHeaders("*")  // Permite todos los encabezados
